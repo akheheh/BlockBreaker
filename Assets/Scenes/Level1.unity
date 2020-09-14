@@ -3894,9 +3894,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
         type: 3}
+      propertyPath: ballSounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 12518850}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
+      propertyPath: ballSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7763bf55bc038fd4a81d7c7bef5361f0, type: 3}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
+      propertyPath: ballSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ebfea0b8f1373df4180ecbf98c959857, type: 3}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
+      propertyPath: ballSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 62d75044c7f683b42bf2d094abdd6061, type: 3}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
+      propertyPath: ballSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ccc96a2b1196344895c580f145ad0a1, type: 3}
+    - target: {fileID: 6334124921646316235, guid: 7a4851aaf92f14b86868e5fb9b06e52c,
+        type: 3}
+      propertyPath: ballSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: a534d7316a789524bbacf7d4d751438c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a4851aaf92f14b86868e5fb9b06e52c, type: 3}
 --- !u!1001 &8673787575168402510
