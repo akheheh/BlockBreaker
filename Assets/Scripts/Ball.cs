@@ -9,11 +9,15 @@ public class Ball : MonoBehaviour
     [SerializeField] float xPush = 2f;
     [SerializeField] float yPush = 15f;
     //State is distance between paddle and ball
+    [SerializeField] AudioClip [] ballSounds;
     Vector2 paddle2BallVector;
     // Start is called before the first frame update
 
     //hasStarted is false so we can make sure the ball is locked before we click
     bool hasStarted = false;
+
+    //Cached component references; just use it once rather than keep instantiating
+    AudioSource myAudioSource;
     void LockBallToPaddle() {
         //We then want to get the position of the paddle, so we store that into a new Vector2
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
@@ -29,10 +33,18 @@ public class Ball : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(hasStarted) {
+            AudioClip clip = ballSounds[UnityEngine.Random.Range(0, ballSounds.Length)];
+            myAudioSource.PlayOneShot(clip);
+            
+        }
+    }
     void Start()
     {
         //The distance is the distance between the ball and the paddle (a vector delta)
         paddle2BallVector = transform.position - paddle1.transform.position;
+        myAudioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
